@@ -1,2 +1,7 @@
 @import "tailwindcss";
 
+.small-badge .MuiBadge-badge{
+    font-size: 10px;
+    height: 16px;
+    min-width:16px;
+}
