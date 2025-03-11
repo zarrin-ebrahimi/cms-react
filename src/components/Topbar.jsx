@@ -5,24 +5,26 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Topbar() {
   return (
-    <div className='bg-gray-200 p-3  flex items-center justify-between'>
+    <div className='bg-slate-100 p-3  flex items-center justify-between  rounded-sm'>
         <div>
             <span className='text-xl font-bold'>Academi Zarrin</span>
         </div>
-        <div className='TopRight  flex gap-x-4'>
-            <img src="" alt="" />
-            <div>
+        <div className='TopRight  flex gap-x-4 '>
+            <div   className='cursor-pointer'>
             <Badge badgeContent={4} color="primary" className='small-badge'>
                <NotificationsIcon color="black" />
             </Badge>
             </div>
-            <div>
+            <div  className='cursor-pointer'>
             <Badge badgeContent={4} color="primary"  className='small-badge'>
               <MailIcon color="black" />
             </Badge>
             </div>
+            <div  className='cursor-pointer'>
+              <SettingsIcon  />
+            </div>
             <div>
-              <SettingsIcon></SettingsIcon>
+              <img src="images\icons8-user-32.png" alt="" className='w-7 h-7'/>
             </div>
         </div>
     </div>
