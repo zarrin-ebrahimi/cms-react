@@ -7,15 +7,17 @@ import Sidebar from './components/Sidebar'
 function App() {
  let router = useRoutes(routes)
  return (
-    <>
-     <div  className='container flex w-full  bg-white '>
-     <Sidebar></Sidebar>
-     <div className='main grow  overflow-y-scroll rounded-sm my-2'>
+    
+     <div  className='flex  gap-x-2 w-full bg-white '>
+      <div className=''>
+      <Sidebar></Sidebar>
+      </div>
+     <div className='main grow overflow-y-scroll rounded-sm '>
      <Topbar></Topbar>
      {router}
      </div>
      </div>
-    </>
+    
   )
 }
 
