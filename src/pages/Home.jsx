@@ -3,6 +3,7 @@ import Chart from '../components/rechart/chart'
 import { xAxisData } from '../components/rechart/datas'
 import * as Icon from '@mui/icons-material'
 import BoxFeatures from '../components/BoxFeatures'
+import WidgetSm from '../components/users/WidgetSm'
 export default function Home() {
   return (
     <div>
@@ -34,6 +35,9 @@ export default function Home() {
       </BoxFeatures>
       </div>
       <Chart grid  title='Month Sale' data={xAxisData} dataKey="Sale" ></Chart>
+     
+      <WidgetSm/>
+      
     </div>
   )
 }
