@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react' 
+import Chart from '../components/rechart/chart'
+import { xAxisData } from '../components/rechart/datas'
 import * as Icon from '@mui/icons-material'
-// import Icon from '@mui/icons-material/CurrencyExchange';
 import BoxFeatures from '../components/BoxFeatures'
 export default function Home() {
   return (
     <div>
-      <div className=' grid grid-cols-3 gap-x-3'>
+      <div className=' grid xl:grid-cols-3 gap-x-3 md:grid-cols-2  grid-cols-1'>
       <BoxFeatures>
         <h2 className='text-xl'>Sales</h2>
         <h2 className='text-2xl font-bold'>
@@ -32,6 +33,7 @@ export default function Home() {
         </h2>
       </BoxFeatures>
       </div>
+      <Chart grid  title='Month Sale' data={xAxisData} dataKey="Sale" ></Chart>
     </div>
   )
 }
