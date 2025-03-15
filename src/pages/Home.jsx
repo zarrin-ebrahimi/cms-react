@@ -4,6 +4,7 @@ import { xAxisData } from '../components/rechart/datas'
 import * as Icon from '@mui/icons-material'
 import BoxFeatures from '../components/BoxFeatures'
 import WidgetSm from '../components/users/WidgetSm'
+import WidgetLg from '../components/transActions/WidgetLg'
 export default function Home() {
   return (
     <div>
@@ -35,9 +36,14 @@ export default function Home() {
       </BoxFeatures>
       </div>
       <Chart grid  title='Month Sale' data={xAxisData} dataKey="Sale" ></Chart>
-     
-      <WidgetSm/>
-      
+      <div  className='grid grid-cols-8 gap-3'>
+        <div  className='col-span-3'>
+        <WidgetSm />
+        </div>
+        <div  className='col-span-5'>
+        <WidgetLg/>
+        </div>
+      </div>
     </div>
   )
 }
