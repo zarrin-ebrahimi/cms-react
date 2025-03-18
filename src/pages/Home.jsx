@@ -7,7 +7,7 @@ import WidgetSm from '../components/users/WidgetSm'
 import WidgetLg from '../components/transActions/WidgetLg'
 export default function Home() {
   return (
-    <div>
+    <div >
       <div className=' grid xl:grid-cols-3 gap-x-3 md:grid-cols-2  grid-cols-1'>
       <BoxFeatures>
         <h2 className='text-xl'>Sales</h2>
@@ -35,7 +35,9 @@ export default function Home() {
         </h2>
       </BoxFeatures>
       </div>
+      <div  className='bg-slate-50  rounded-sm shadow-md'>
       <Chart grid  title='Month Sale' data={xAxisData} dataKey="Sale" ></Chart>
+      </div>
       <div  className='grid grid-cols-8 gap-3'>
         <div  className='col-span-3'>
         <WidgetSm />

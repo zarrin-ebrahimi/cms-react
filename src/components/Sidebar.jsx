@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export default function Sidebar() {
   return (
     <div className='h-screen w-52 '>
-       <div className='bg-slate-100   pl-2 h-full  rounded-sm pt-5 '>
+       <div className='bg-slate-50   pl-2 h-full  rounded-sm pt-5 '>
          <span className='font-bold text-gray-900'>Dashbord</span>
           <div className='flex flex-col  mt-6 '>
           <ul className=' m-3  flex flex-col gap-y-1 '>

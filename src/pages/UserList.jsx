@@ -8,7 +8,7 @@ export default function UserList() {
     setUserDatas(userDatas.filter(user => user.id != userID))
   }
   return (
-    <div className='bg-slate-200 mt-3 rounded-md shadow-md p-3'>
+    <div className='bg-slate-50 mt-3 rounded-md shadow-md p-3'>
     <span className='text-xl '>Users List</span>
     <ul className=' w-full mt-3 flex  flex-col  gap-3 '>
        {userDatas.map(user =>(

@@ -3,12 +3,13 @@ import './App.css'
 import routes from './routes' 
 import { useRoutes } from 'react-router-dom'
 import Topbar from './components/Topbar'
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar' 
+
 function App() {
  let router = useRoutes(routes)
  return (
     
-     <div  className='flex  gap-x-2 w-full bg-white '>
+     <div  className='flex  gap-x-2 w-full bg-white p-2'>
       <div className=''>
       <Sidebar></Sidebar>
       </div>
@@ -17,6 +18,7 @@ function App() {
      {router}
      </div>
      </div>
+
     
   )
 }

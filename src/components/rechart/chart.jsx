@@ -11,7 +11,7 @@ import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } f
 
 export default function Chart({title, data,dataKey,grid}){
     return(
-      <div className='shadow-md bg-slate-100 rounded-sm p-3 '>
+      <div className='  rounded-sm p-3 '>
          <h3 className=' text-xl'>{title}</h3>
          <ResponsiveContainer width='100%' aspect={4}>
             <LineChart data={data}>

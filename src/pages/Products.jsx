@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {dataProducts} from './dataProducts' 
 import * as Icon from '@mui/icons-material'
-
+import { Link } from 'react-router-dom'
 export default function Products() {
   const [productsDatas, setProductDta] = useState(dataProducts)
   const productDelete = productID =>{
@@ -24,9 +24,11 @@ export default function Products() {
              <button className='bg-gray-100 rounded-md' onClick={()=>productDelete(product.id)}>
                 <Icon.HighlightOff className='m-1 text-red-500' fontSize='small'/>
             </button>
-            <button className='bg-gray-100 rounded-md'>
+            <Link to={`/product/${product.id}`}>
+            <button className='bg-gray-100 rounded-md cursor-pointer'>
                 <Icon.BorderColor className='m-1  text-blue-700' fontSize='small'/>
             </button>
+            </Link>
             </div>
         </li>
        ))}
