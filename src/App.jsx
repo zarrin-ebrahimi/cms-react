@@ -9,11 +9,11 @@ function App() {
  let router = useRoutes(routes)
  return (
     
-     <div  className='flex  gap-x-2 w-full bg-white p-2'>
+     <div  className='flex  gap-x-2 w-full p-2 bg-white  '>
       <div className=''>
       <Sidebar></Sidebar>
       </div>
-     <div className='main grow overflow-y-scroll rounded-sm '>
+     <div className='main grow  rounded-sm '>
      <Topbar></Topbar>
      {router}
      </div>

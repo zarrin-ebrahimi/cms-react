@@ -3,13 +3,13 @@ import * as Icon from '@mui/icons-material'
 import {Link} from 'react-router-dom'
 export default function Sidebar() {
   return (
-    <div className='h-screen w-52 '>
-       <div className='bg-slate-50   pl-2 h-full  rounded-sm pt-5 '>
+    <div className='h-screen w-52'>
+       <div className='bg-slate-50 fixed w-52  pl-2 h-full  rounded-sm pt-5 '>
          <span className='font-bold text-gray-900'>Dashbord</span>
           <div className='flex flex-col  mt-6 '>
           <ul className=' m-3  flex flex-col gap-y-1 '>
            <Link  to="/">
-           <li className='flex items-center text-gray-500 hover:text-blue-700 cursor-pointer'>
+           <li className='flex items-center text-gray-500  cursor-pointer'>
               <Icon.Home className='mr-1 text-gray-800' fontSize='small' /> 
               Home
             </li>
