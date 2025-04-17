@@ -5,7 +5,7 @@ import {transactions} from './datas'
 export default function WidgetLg(){
 
     return(
-        <div className='bg-slate-50 mt-3 rounded-md shadow-md p-3'>
+        <div className='bg-green-300/15 mt-3 rounded-md shadow-md p-3'>
         <span className='text-xl '>Last Transactions</span>
         <table className='w-full'>
         <tbody className=' w-full flex flex-col gap-y-3 mt-3'>

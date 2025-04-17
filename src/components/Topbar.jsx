@@ -5,7 +5,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Topbar() {
   return (
-    <div className='bg-slate-50 p-3  flex items-center justify-between  rounded-sm'>
+   
+    <div className='bg-green-300/15 p-3 flex items-center justify-between  rounded-sm'>
         <div>
             <span className='text-xl font-bold'>Academi Zarrin</span>
         </div>
@@ -28,5 +29,6 @@ export default function Topbar() {
             </div>
         </div>
     </div>
+    
   )
 }

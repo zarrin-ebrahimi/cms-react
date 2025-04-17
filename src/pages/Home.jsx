@@ -35,11 +35,11 @@ export default function Home() {
         </h2>
       </BoxFeatures>
       </div>
-      <div  className='bg-slate-50  rounded-sm shadow-md'>
+      <div  className='rounded-sm shadow-md'>
       <Chart grid  title='Month Sale' data={xAxisData} dataKey="Sale" ></Chart>
       </div>
-      <div  className='grid grid-cols-8 gap-3'>
-        <div  className='col-span-3'>
+      <div  className='grid grid-cols-8 gap-3 '>
+        <div  className='col-span-3 '>
         <WidgetSm />
         </div>
         <div  className='col-span-5'>

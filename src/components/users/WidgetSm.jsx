@@ -3,7 +3,7 @@ import * as Icon from '@mui/icons-material'
 import {newMembers} from './datas'
 export default function WidgetSm(){
     return(
-        <div className='bg-slate-50 mt-3 rounded-md shadow-md p-3'>
+        <div className='bg-green-300/15 mt-3 rounded-md shadow-md p-3'>
             <span className='text-xl '>New Join Member</span>
             <ul className=' w-full mt-3 grid grid-cols-1 gap-3'>
                {newMembers.map(user =>(

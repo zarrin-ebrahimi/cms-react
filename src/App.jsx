@@ -11,11 +11,13 @@ function App() {
     
      <div  className='flex  gap-x-2 w-full p-2 bg-white  '>
       <div className=''>
-      <Sidebar></Sidebar>
+      <Sidebar/>
       </div>
-     <div className='main grow  rounded-sm '>
-     <Topbar></Topbar>
+     <div className='main  grow  rounded-sm overflow-y-auto '>
+     <Topbar/>
+   
      {router}
+    
      </div>
      </div>
 
