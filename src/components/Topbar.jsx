@@ -6,9 +6,9 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 export default function Topbar() {
   return (
    
-    <div className='bg-green-300/15 p-3 flex items-center justify-between  rounded-sm'>
+    <div className='bg-green-300/15 p-3  flex items-center justify-between  rounded-sm'>
         <div>
-            <span className='text-xl font-bold'>Academi Zarrin</span>
+            <span className='text-xl font-bold'>Gallery Watch</span>
         </div>
         <div className='TopRight  flex gap-x-4 '>
             <div   className='cursor-pointer'>

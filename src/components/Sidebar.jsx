@@ -31,12 +31,6 @@ export default function Sidebar() {
               Users
          </li>
            </Link>
-           <Link  to="/newUser">
-           <li className='flex items-center text-gray-500'>
-              <Icon.Person className='mr-1 text-gray-800' fontSize='small' /> 
-              New Users
-          </li>
-           </Link>
           <Link  to="/products">
            <li className='flex items-center text-gray-500'>
               <Icon.Storefront className='mr-1 text-gray-800'  fontSize='small'/> 
@@ -47,10 +41,12 @@ export default function Sidebar() {
               <Icon.Paid className='mr-1 text-gray-800' fontSize='small' /> 
               Transaction
          </li>
-         <li className='flex items-center text-gray-500'>
+          <Link  to="/newProduct">
+          <li className='flex items-center text-gray-500'>
               <Icon.Assessment className='mr-1 text-gray-800' fontSize='small' /> 
-              Report
+              Add Product
          </li>
+          </Link>
          </ul>
          <span  className='mt-3  text-gray-500 text-sm  '>Notification</span>
          <ul className='ml-2 mb-3 flex flex-col gap-y-1 mt-1'>
